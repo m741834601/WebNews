@@ -14,6 +14,9 @@
 		84F43C1A1C256270006593D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F43C181C256270006593D2 /* LaunchScreen.storyboard */; };
 		84F43C251C256271006593D2 /* Web__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F43C241C256271006593D2 /* Web__Tests.m */; };
 		84F43C301C256271006593D2 /* Web__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F43C2F1C256271006593D2 /* Web__UITests.m */; };
+		84F43C461C256846006593D2 /* NewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F43C441C256846006593D2 /* NewsVC.m */; };
+		84F43C491C25689F006593D2 /* NewsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F43C481C25689F006593D2 /* NewsVC.storyboard */; };
+		84FFA84B1C2655860097595A /* NetWorkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FFA84A1C2655860097595A /* NetWorkTools.m */; };
 		A86B633B798D98362DC871F4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2546EA0A1F5A8CD0675B5473 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,11 @@
 		84F43C2B1C256271006593D2 /* Web新闻UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Web新闻UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F43C2F1C256271006593D2 /* Web__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Web__UITests.m; sourceTree = "<group>"; };
 		84F43C311C256271006593D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F43C431C256846006593D2 /* NewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsVC.h; sourceTree = "<group>"; };
+		84F43C441C256846006593D2 /* NewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsVC.m; sourceTree = "<group>"; };
+		84F43C481C25689F006593D2 /* NewsVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsVC.storyboard; sourceTree = "<group>"; };
+		84FFA8491C2655860097595A /* NetWorkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTools.h; sourceTree = "<group>"; };
+		84FFA84A1C2655860097595A /* NetWorkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTools.m; sourceTree = "<group>"; };
 		C04FAA1987B5CDD0587FD9D0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FB82283ACC814BCC28C20973 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,7 +121,7 @@
 		84F43C061C256270006593D2 /* Web新闻 */ = {
 			isa = PBXGroup;
 			children = (
-				84F43C3D1C25635D006593D2 /* Class */,
+				84F43C401C25681B006593D2 /* Class */,
 				84F43C0A1C256270006593D2 /* AppDelegate.h */,
 				84F43C0B1C256270006593D2 /* AppDelegate.m */,
 				84F43C161C256270006593D2 /* Assets.xcassets */,
@@ -151,25 +159,31 @@
 			path = "Web新闻UITests";
 			sourceTree = "<group>";
 		};
-		84F43C3D1C25635D006593D2 /* Class */ = {
+		84F43C401C25681B006593D2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				84F43C3E1C25635D006593D2 /* News */,
-				84F43C3F1C25635D006593D2 /* Tools */,
+				84F43C411C25681B006593D2 /* News */,
+				84F43C421C25681B006593D2 /* Tools */,
 			);
-			path = Class;
+			name = Class;
+			path = ../Class;
 			sourceTree = "<group>";
 		};
-		84F43C3E1C25635D006593D2 /* News */ = {
+		84F43C411C25681B006593D2 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				84F43C431C256846006593D2 /* NewsVC.h */,
+				84F43C441C256846006593D2 /* NewsVC.m */,
+				84F43C481C25689F006593D2 /* NewsVC.storyboard */,
 			);
 			path = News;
 			sourceTree = "<group>";
 		};
-		84F43C3F1C25635D006593D2 /* Tools */ = {
+		84F43C421C25681B006593D2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				84FFA8491C2655860097595A /* NetWorkTools.h */,
+				84FFA84A1C2655860097595A /* NetWorkTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -293,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F43C1A1C256270006593D2 /* LaunchScreen.storyboard in Resources */,
+				84F43C491C25689F006593D2 /* NewsVC.storyboard in Resources */,
 				84F43C171C256270006593D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FFA84B1C2655860097595A /* NetWorkTools.m in Sources */,
 				84F43C0C1C256270006593D2 /* AppDelegate.m in Sources */,
+				84F43C461C256846006593D2 /* NewsVC.m in Sources */,
 				84F43C151C256270006593D2 /* Web__.xcdatamodeld in Sources */,
 				84F43C091C256270006593D2 /* main.m in Sources */,
 			);
